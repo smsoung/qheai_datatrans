@@ -1,0 +1,1 @@
+java -Xms128m -Xmx1024m -jar lib/qheai_datatrans.jar

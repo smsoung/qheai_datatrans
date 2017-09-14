@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-net-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-0.9.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/mchange-commons-java-0.2.10.jar"/>
+	<classpathentry kind="lib" path="lib/logback-classic-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/logback-core-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/metrics-core-2.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/scala-parser-combinators_2.11-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/junique-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/kafkatools.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/kafka_2.11-0.10.1.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/kafka_2.11-0.10.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/kafka_2.11-0.10.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/kafka-clients-0.10.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/scala-library-2.11.8.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.21.jar"/>
+	<classpathentry kind="lib" path="lib/zkclient-0.9.jar"/>
+	<classpathentry kind="lib" path="lib/zookeeper-3.4.8.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.31-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

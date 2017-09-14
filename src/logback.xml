@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<timestamp key="byDay" datePattern="yyyy-MM-dd" />
+
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>info</level>
+		</filter>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>[qheai_datatrans]%d{HH:mm:ss} %5p %c{0}:%L - %m%n</pattern>
+		</layout>
+	</appender>
+	
+	<appender name="sift" class="ch.qos.logback.classic.sift.SiftingAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>info</level>
+		</filter>
+	    <discriminator>
+	      <key>service</key>
+	      <defaultValue>qheai_datatrans</defaultValue>
+	    </discriminator>
+	    <sift>
+	      <appender name="service" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	        <file>logs/${service}.log</file>
+	        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	          <fileNamePattern>logs/${service}.%d{yyyy-MM-dd}.log</fileNamePattern>
+	          <maxHistory>10</maxHistory>
+	         </rollingPolicy>
+	        <encoder>
+	          <pattern>[${service}]%d{HH:mm:ss} %5p %c{0}:%L - %m%n</pattern>
+	        </encoder>
+	      </appender>
+	    </sift>
+	</appender>
+	
+	<appender name="event" class="ch.qos.logback.core.rolling.RollingFileAppender"> 
+        <file>logs/qheai_datatrans.error.log</file> 
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+            <fileNamePattern>logs/qheai_basedata.error.%d{yyyy-MM-dd}.log</fileNamePattern> 
+            <maxHistory>30</maxHistory> 
+        </rollingPolicy> 
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"> 
+            <pattern>qheai_datatrans.error.%d{HH:mm:ss} %5p %c{0}:%L - %m%n</pattern> 
+        </encoder> 
+    </appender> 
+   
+   <!--错误数据记录 additivity为false表示指定日志不向上一级输入 为true反之-->
+    <logger name="errordata" level="info" additivity="false"> 
+        <appender-ref ref="event" /> 
+    </logger> 
+	
+	<logger name="com.topsci.qheai.util.db" level="info">  
+		<appender-ref ref="event" />
+	</logger>
+	
+	<root>
+		<appender-ref ref="console" /> 
+		<appender-ref ref="sift" /> 
+	</root>
+
+</configuration>

@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Nov 06 14:06:02 CST 2015
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=E\:\\javaItem\\myeclipse10\\QHServer\\QHServer.jar
+manifest.mergeall=true
+manifest.mainclass=com.topsci.adaptor.bootstart.BootStart
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=<po|QHServer>~activemq-all-5.3.0.jar;<po|QHServer>~adus.properties;<po|QHServer>~c3p0-0.9.5.1.jar;<po|QHServer>~cfg.properties;<po|QHServer>~Changelog.txt;<po|QHServer>~commons-beanutils-1.8.0.jar;<po|QHServer>~commons-collections-3.1.jar;<po|QHServer>~commons-lang.jar;<po|QHServer>~commons-logging-1.1.1.jar;<po|QHServer>~commons-net-3.1.jar;<po|QHServer>~createDataBase.sql;<po|QHServer>~createHODB.sql;<po|QHServer>~ezmorph-1.0.6.jar;<po|QHServer>~init.sql;<po|QHServer>~json-lib-2.4-jdk15.jar;<po|QHServer>~logback-classic-1.1.2.jar;<po|QHServer>~logback-core-1.1.2.jar;<po|QHServer>~logback.xml;<po|QHServer>~mchange-commons-java-0.2.10.jar;<po|QHServer>~ojdbc6.jar;<po|QHServer>~qhserver.properties;<po|QHServer>~slf4j-api-1.7.7.jar;<jar|activemq-all-5.3.0.jar>;<jar|commons-beanutils-1.8.0.jar>;<jar|commons-collections-3.1.jar>;<jar|commons-lang.jar>;<jar|commons-logging-1.1.1.jar>;<jar|commons-net-3.1.jar>;<jar|ezmorph-1.0.6.jar>;<jar|json-lib-2.4-jdk15.jar>;<jar|ojdbc6.jar>;<jar|c3p0-0.9.5.1.jar>;<jar|mchange-commons-java-0.2.10.jar>;<jar|logback-classic-1.1.2.jar>;<jar|logback-core-1.1.2.jar>;<jar|slf4j-api-1.7.7.jar>
+includes=
